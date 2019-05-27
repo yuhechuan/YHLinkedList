@@ -54,6 +54,9 @@
     } else {
         YHNote *pre = note->prev;
         YHNote *next =note->next;
+        pre->next = next;
+        next->prev = pre;
+        
         if (note == frist) {
             frist = next;
         }

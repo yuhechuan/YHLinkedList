@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "YHOneLinked.h"
+#import "YHJosephusLinked.h"
 
 @interface ViewController ()
 
@@ -17,16 +18,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    YHOneLinked *linked = [[YHOneLinked alloc]init];
-    [linked add:@"0"];
+    YHJosephusLinked *linked = [[YHJosephusLinked alloc]init];
     [linked add:@"1"];
     [linked add:@"2"];
     [linked add:@"3"];
     [linked add:@"4"];
     [linked add:@"5"];
-    [linked setObject:@"4.4" atIndex:4];
-    [linked remove:5];
+    [linked add:@"6"];
+    [linked add:@"7"];
+    [linked add:@"8"];
+    
+    [linked reset];
+    
+    while (linked.size > 0) {
+        NSLog(@"%@",[linked next:2]) ;
+        [linked removeCurrent];
+    }
+    
     NSLog(@"%@",linked);
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 

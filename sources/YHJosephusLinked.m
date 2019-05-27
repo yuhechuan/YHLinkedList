@@ -26,6 +26,9 @@
  *current向前走几部
  */
 - (id)next:(NSInteger)steps {
+    if (current == nil) {
+        return nil;
+    }
     for (int i = 0; i< steps; i++) {
         current = current->next;
     }
@@ -37,15 +40,19 @@
  *删除current节点,并让current 指向下一节点
  */
 - (id)removeCurrent {
-    YHNote *oldCurrent = current;
-    [self removeNote:current];
     
-    if (size == 1) {
-        current = oldCurrent->next;
-    }else {
-        current = nil;
+    if (current == nil) {
+        return nil;
     }
-    return oldCurrent->element;
+    
+    YHNote *next = current->next;
+    id element =  [self removeNote:current];
+    if (size == 0) {
+        current = nil;
+    }else {
+        current = next;
+    }
+    return element;
 }
 
 
