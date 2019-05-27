@@ -43,24 +43,26 @@
 
 - (id)remove:(NSInteger)index {
     [self rangeCheck:index];
-    
     YHNote *current = [self note:index];
-    
+    return [self removeNote:current];
+}
+
+- (id)removeNote:(YHNote *)note {
     if (size == 1) {
         frist = nil;
         last = nil;
     } else {
-        YHNote *pre = current->prev;
-        YHNote *next =current->next;
-        if (current == frist) {
+        YHNote *pre = note->prev;
+        YHNote *next =note->next;
+        if (note == frist) {
             frist = next;
         }
-        if (current == last) {
+        if (note == last) {
             last = pre;
         }
     }
     size --;
-    return current->element;
+    return note->element;
 }
 
 /**

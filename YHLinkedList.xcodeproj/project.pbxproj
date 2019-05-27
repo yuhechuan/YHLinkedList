@@ -21,6 +21,7 @@
 		F07B58B1229BCBBA0046E6F3 /* YHNote.m in Sources */ = {isa = PBXBuildFile; fileRef = F07B58A7229BCBBA0046E6F3 /* YHNote.m */; };
 		F07B58B2229BCBBA0046E6F3 /* YHDoubleLoopLinked.m in Sources */ = {isa = PBXBuildFile; fileRef = F07B58AB229BCBBA0046E6F3 /* YHDoubleLoopLinked.m */; };
 		F07B58B3229BCBBA0046E6F3 /* YHDoubleLinked.m in Sources */ = {isa = PBXBuildFile; fileRef = F07B58AC229BCBBA0046E6F3 /* YHDoubleLinked.m */; };
+		F07B58B6229BD8B70046E6F3 /* YHJosephusLinked.m in Sources */ = {isa = PBXBuildFile; fileRef = F07B58B5229BD8B70046E6F3 /* YHJosephusLinked.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		F07B58AA229BCBBA0046E6F3 /* YHBaseLinked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHBaseLinked.h; sourceTree = "<group>"; };
 		F07B58AB229BCBBA0046E6F3 /* YHDoubleLoopLinked.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHDoubleLoopLinked.m; sourceTree = "<group>"; };
 		F07B58AC229BCBBA0046E6F3 /* YHDoubleLinked.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHDoubleLinked.m; sourceTree = "<group>"; };
+		F07B58B4229BD8B70046E6F3 /* YHJosephusLinked.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHJosephusLinked.h; sourceTree = "<group>"; };
+		F07B58B5229BD8B70046E6F3 /* YHJosephusLinked.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHJosephusLinked.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,8 @@
 				F07B58AC229BCBBA0046E6F3 /* YHDoubleLinked.m */,
 				F07B58A4229BCBBA0046E6F3 /* YHDoubleLoopLinked.h */,
 				F07B58AB229BCBBA0046E6F3 /* YHDoubleLoopLinked.m */,
+				F07B58B4229BD8B70046E6F3 /* YHJosephusLinked.h */,
+				F07B58B5229BD8B70046E6F3 /* YHJosephusLinked.m */,
 			);
 			path = sources;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F07B58B6229BD8B70046E6F3 /* YHJosephusLinked.m in Sources */,
 				F07B58AF229BCBBA0046E6F3 /* YHOneLoopLinked.m in Sources */,
 				F07B5871229BC9FA0046E6F3 /* ViewController.m in Sources */,
 				F07B58B1229BCBBA0046E6F3 /* YHNote.m in Sources */,
